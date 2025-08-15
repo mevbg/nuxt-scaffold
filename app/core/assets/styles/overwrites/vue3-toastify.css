@@ -1,0 +1,29 @@
+/* =================================================== */
+/* Overwrites → Vue3Toastify */
+
+.varname {
+  /* -------------------------| Base */
+  /* .Toastify {} */
+
+  /* -------------------------| Toast */
+  & .Toastify__toast {
+    border-radius: var(--ds-border-radius-twelve);
+
+    font-family: var(--ds-font-family-sans);
+    font-size: var(--ds-font-size-note);
+    color: var(--ds-color-content-primary-base);
+
+    background-color: var(--ds-color-background-primary-base);
+    box-shadow: var(--ds-box-shadow-twelve);
+  }
+
+  /* -------------------------| Icon */
+  & .Toastify__toast-icon {
+    align-self: baseline;
+  }
+
+  /* -------------------------| Close button */
+  & .Toastify__close-button {
+    color: var(--ds-color-content-primary-base);
+  }
+}
