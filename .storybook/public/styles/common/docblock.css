@@ -42,19 +42,19 @@ html.dark table.docblock-argstable {
   background: var(--ds-color-background-gray-weakest);
 }
 
-table.docblock-argstable tbody.docblock-argstable-body tr[title*='Props items'] td span {
+table.docblock-argstable tbody.docblock-argstable-body tr[title*='items'] td span {
   color: var(--ds-color-content-primary-base) !important;
 }
 
-table.docblock-argstable tbody.docblock-argstable-body tr[title*='Props items'] td svg {
+table.docblock-argstable tbody.docblock-argstable-body tr[title*='items'] td svg {
   color: currentColor;
 }
 
-html.light table.docblock-argstable tbody.docblock-argstable-body tr[title*='Props items'] td {
+html.light table.docblock-argstable tbody.docblock-argstable-body tr[title*='items'] td {
   background: var(--ds-color-background-gray-weakest) !important;
 }
 
-html.dark table.docblock-argstable tbody.docblock-argstable-body tr[title*='Props items'] td {
+html.dark table.docblock-argstable tbody.docblock-argstable-body tr[title*='items'] td {
   background: rgb(34, 36, 37) !important;
 }
 
