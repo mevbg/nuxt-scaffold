@@ -29,7 +29,7 @@ npm run generate:ssl
 
 ## Development Server
 
-Start the development server on `https://development.varname.bge.bg:3000`:
+Start the development server on `https://development.varname.bg:3000`:
 
 ```bash
 # npm
