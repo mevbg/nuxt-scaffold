@@ -1,6 +1,6 @@
 {
-  "name": "@mevbg/nuxt-scaffolding",
-  "title": "Mev’s Nuxt Scaffolding",
+  "name": "@mevbg/nuxt-scaffold",
+  "title": "Mev’s Nuxt Scaffold",
   "version": "0.0.0",
   "license": "UNLICENSED",
   "homepage": "https://nuxt.mev.bg",
@@ -10,10 +10,11 @@
     "email": "martin@metodiev.bg",
     "url": "https://metodiev.bg"
   },
-  "description": "Mev’s Nuxt Scaffolding",
+  "description": "Mev’s personal Nuxt scaffold",
   "keywords": [
     "nuxt",
-    "scaffolding",
+    "scaffold",
+    "scaffolding tool",
     "mev"
   ],
   "themeColor": "#E8633C",
