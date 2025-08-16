@@ -31,7 +31,7 @@ const {
 
 // TODO: remove this
 // try {
-//   const { data: offer, error: offerError } = await useFetch(`/api/offers/${5}`);
+//   const { data: offer, error: offerError } = await useFetch(`/api/search/${5}`);
 
 //   if (offerError.value) {
 //     throw createError(offerError.value);

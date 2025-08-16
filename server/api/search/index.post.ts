@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const { id } = getRouterParams(event);
 
   try {
-    const data = await requestWithTimeout(endpoint('offer', { id }));
+    const data = await requestWithTimeout(endpoint('search', { id }));
     return data;
   } catch (err: unknown) {
     const { statusCode = 500, statusMessage = 'Internal Server Error' } = err as {
