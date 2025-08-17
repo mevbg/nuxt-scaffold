@@ -9,10 +9,16 @@ import LogoSVG from '#core/assets/images/site-logo.svg';
 </script>
 
 <style module>
+:root {
+  --ds-site-logo-ratio: 1;
+  --ds-site-logo-height: calc(var(--ds-dimensions-site-logo) / var(--ds-site-logo-ratio));
+}
+
 .root {
   position: relative;
-  display: inline-block;
-  margin: 3px;
+  display: block;
+  aspect-ratio: var(--ds-site-logo-ratio);
+  width: var(--ds-dimensions-site-logo);
 }
 
 .root::after {
@@ -31,7 +37,7 @@ import LogoSVG from '#core/assets/images/site-logo.svg';
   position: relative;
   z-index: 1;
 
-  width: var(--ds-dimensions-site-logo);
+  width: 100%;
   height: auto;
 
   background-color: var(--ds-color-primitive-white);
