@@ -8,4 +8,10 @@ const endpoints: EndpointPaths = {
   search: () => `search`
 };
 
-export const endpoint = (name: string, params: EndpointParams) => endpoints[name](params);
+export const endpoint = (name: string, params: EndpointParams) => {
+  const endpointFn = endpoints[name];
+  if (!endpointFn) {
+    throw new Error(`Unknown endpoint: ${name}`);
+  }
+  return endpointFn(params);
+};

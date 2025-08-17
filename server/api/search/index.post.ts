@@ -3,6 +3,13 @@ import { endpoint } from '#server/endpoints';
 export default defineEventHandler(async (event) => {
   const { id } = getRouterParams(event);
 
+  if (!id) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Bad Request'
+    });
+  }
+
   try {
     const data = await requestWithTimeout(endpoint('search', { id }));
     return data;
