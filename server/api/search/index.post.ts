@@ -1,26 +1,7 @@
-import { endpoint } from '#server/endpoints';
+import { sendRequest } from '#server/server.utils';
 
 export default defineEventHandler(async (event) => {
-  const { id } = getRouterParams(event);
+  const params = await readBody(event);
 
-  if (!id) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: 'Bad Request'
-    });
-  }
-
-  try {
-    const data = await requestWithTimeout(endpoint('search', { id }));
-    return data;
-  } catch (err: unknown) {
-    const { statusCode = 500, statusMessage = 'Internal Server Error' } = err as {
-      statusCode?: number;
-      statusMessage?: string;
-    };
-    throw createError({
-      statusCode,
-      statusMessage
-    });
-  }
+  return sendRequest({ name: 'search', params });
 });
