@@ -66,7 +66,7 @@ const classList = computed(() => {
   --stage-width: calc(var(--ds-dimensions-toggle-thumb) * 2 + var(--thumb-offset) * 2);
   --stage-height: calc(var(--ds-dimensions-toggle-thumb) + var(--thumb-offset) * 2);
 
-  &:focus-within {
+  &:has(input:focus-visible) {
     outline: 2px solid var(--ds-color-primitive-red50);
     outline-offset: 3px;
   }
