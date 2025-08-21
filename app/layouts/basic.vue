@@ -1,5 +1,5 @@
 <template>
-  <div id="VARNAME">
+  <div id="VARNAME" tabindex="-1">
     <HeaderBar :class="$style.header" />
 
     <main class="z-1 relative" style="height: 200vh">
