@@ -1,9 +1,15 @@
 <template>
-  <header :class="[$style.root, 'flex items-center justify-between']">
-    <LayoutWrapper class="flex w-full items-center justify-center">
-      <nuxt-link to="/" class="block" aria-label="Начало – VARNAME.bg">
+  <header :class="$style.root">
+    <LayoutWrapper class="flex w-full items-center justify-between">
+      <div class="flex-1" />
+
+      <nuxt-link to="/" class="block" aria-label="Начална страница">
         <SiteLogo />
       </nuxt-link>
+
+      <div class="flex flex-1 justify-end">
+        <ColorSchemeController />
+      </div>
     </LayoutWrapper>
   </header>
 </template>

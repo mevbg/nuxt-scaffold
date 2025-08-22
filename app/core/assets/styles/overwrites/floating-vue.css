@@ -1,13 +1,30 @@
 /* =================================================== */
 /* Overwrites → FloatingVue */
 
-.varname {
-  & .v-popper__popper .v-popper__inner {
+/* varname */
+.ds {
+  & .v-popper--theme-tooltip .v-popper__inner {
     color: var(--ds-color-content-primary-inverted);
     background-color: var(--ds-color-background-primary-inverted);
   }
 
   & .v-popper--theme-tooltip .v-popper__arrow-outer {
     border-color: var(--ds-color-background-primary-inverted);
+  }
+
+  & .v-popper--theme-dropdown .v-popper__inner {
+    color: var(--ds-color-content-primary-base);
+    background-color: var(--ds-color-background-primary-base);
+  }
+
+  & .v-popper--theme-dropdown .v-popper__arrow-inner {
+    border-color: var(--ds-color-background-primary-base);
+  }
+}
+
+@media (hover: none) {
+  /* varname */
+  .ds .v-popper--theme-tooltip {
+    display: none !important;
   }
 }
